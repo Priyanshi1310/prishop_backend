@@ -45,15 +45,15 @@ The application will be accessible at http://localhost:3000 in your web browser
 The Project consists of the following API routes -
 
 1. For User Management -
-### GET http://localhost:3000/api/v1/users
-### POST http://localhost:3000/api/v1/users/register
-### POST http://localhost:3000/api/v1/users/login
+### `GET http://localhost:3000/api/v1/users`
+### `POST http://localhost:3000/api/v1/users/register`
+### `POST http://localhost:3000/api/v1/users/login`
 
 2. For Product Management -
-### GET http://localhost:3000/api/v1/products
-### POST http://localhost:3000/api/v1/products
-### PUT http://localhost:3000/api/v1/products/{id}
-### DELETE http://localhost:3000/api/v1/products/{id}
+### `GET http://localhost:3000/api/v1/products`
+### `POST http://localhost:3000/api/v1/products`
+### `PUT http://localhost:3000/api/v1/products/{id}`
+### `DELETE http://localhost:3000/api/v1/products/{id}`
 
 3.For Order Managment - 
 ### GET http://localhost:3000/api/v1/orders
