@@ -87,4 +87,7 @@ The project utilizes the following technologies:
 - Nodemon: A utility that automatically restarts the server when changes are detected.
 - Swagger: API documentation and testing framework.
 
+## Live Demo
+https://prishop-backend.onrender.com/api-docs
+
 
