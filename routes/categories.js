@@ -36,7 +36,7 @@
  *               schema:
  *                 type: array
  *                 items:
- *                   $ref: '#/components/schema/Category'
+ *                   $ref: '#/components/schemas/Category'
  *         '500':
  *           description: Failed to retrieve categories
  *           content:
