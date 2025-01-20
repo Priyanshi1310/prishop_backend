@@ -54,12 +54,12 @@ const options = {
       //   url: "http://localhost:3000/api/v1",
       // },
       {
-        url: "http://",
-        description: "HTTP connection",
+        url: "http://localhost:3000/api/v1",
+        description: "Local Development Server",
       },
       {
-        url: "https://",
-        description: "HTTPS connection",
+        url: "https://prishop-backend.vercel.app/api/v1",
+        description: "Production Server",
       },
     ],
     components: {
