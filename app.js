@@ -7,9 +7,13 @@ require("dotenv/config");
 const authJwt = require("./helpers/jwt");
 const errorHandler = require("./helpers/error-handler");
 const bodyParser = require("body-parser");
+const path = require("path");
 
 const swaggerUi = require("swagger-ui-express");
 const swaggerJsdoc = require("swagger-jsdoc");
+
+app.set('view engine', 'ejs');
+app.set("views", path.join(__dirname, "views"));
 
 app.use(cors());
 app.options("*", cors());
@@ -18,7 +22,7 @@ app.options("*", cors());
 app.use(express.json());
 app.use(morgan("tiny"));
 app.use(bodyParser.json());
-app.use(authJwt());
+//app.use(authJwt());
 app.use("/public/uploads", express.static(__dirname + "/public/uploads"));
 app.use(errorHandler);
 
@@ -84,7 +88,9 @@ const options = {
  app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(specs));
 
 app.get('/',(req,res) => {
-  res.json({message: "Hello Word from backend"});
+ // res.json({message: "Hello Word from backend"});
+ console.log("rendering index.ejs")
+ res.render("index")
 })
 
 // app.listen(3000, ()=>{
