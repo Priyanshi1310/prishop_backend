@@ -58,7 +58,7 @@ const options = {
         description: "Local Development Server",
       },
       {
-        url: "https://",
+        url: "https://prishop-backend.onrender.com/api/v1",
         description: "Production Server",
       },
     ],
