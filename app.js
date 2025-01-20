@@ -58,7 +58,7 @@ const options = {
         description: "Local Development Server",
       },
       {
-        url: "https://prishop-backend.vercel.app/api/v1",
+        url: "https://",
         description: "Production Server",
       },
     ],
