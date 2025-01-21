@@ -400,8 +400,8 @@ router.get(`/get/count`, async (req, res) => {
 
   const countProducts = async () => {
     try {
-      const userCount = await Product.countDocuments({});
-      if (!userCount) {
+      const productCount = await Product.countDocuments({});
+      if (!productCount) {
         return res.status(500).json({ success: false });
       }
       return res.status(200).send({
