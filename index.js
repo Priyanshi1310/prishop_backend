@@ -3,7 +3,7 @@ const app = require('./app');
 const mongoose = require('mongoose');
 
 require('dotenv').config();
-const PORT = 'https://prishop-backend.onrender.com/' || 3000;
+const PORT = process.env.PORT || 3000;
 
 async function startServer() {
     try {
