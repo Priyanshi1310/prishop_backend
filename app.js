@@ -15,7 +15,12 @@ const swaggerJsdoc = require("swagger-jsdoc");
 app.set('view engine', 'ejs');
 app.set("views", path.join(__dirname, "views"));
 
-app.use(cors());
+//app.use(cors());
+app.use(cors({
+  origin: "*", // Allow all origins (for development)
+  methods: ["GET", "POST", "PUT", "DELETE"], // Allowed methods
+  allowedHeaders: ["Content-Type", "Authorization"]
+}));
 app.options("*", cors());
 
 //middleware
