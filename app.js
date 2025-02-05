@@ -90,7 +90,8 @@ const options = {
 };
 
  const specs = swaggerJsdoc(options);
- app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(specs));
+// app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(specs));
+app.use("/api-docs", cors(), swaggerUi.serve, swaggerUi.setup(specs));
 
 app.get('/',(req,res) => {
  // res.json({message: "Hello Word from backend"});
