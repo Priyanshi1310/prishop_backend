@@ -8,7 +8,7 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "This project involves building the backend for a comprehensive Ecommerce application. It is designed using Node.js, Express.js, and MongoDB to handle product management, user interactions, and order product functionalities for an Ecommerce platform.",
   "dependencies": {
     "bcrypt": "^5.1.1",
     "bcryptjs": "^2.4.3",
@@ -38,5 +38,8 @@
     "mongodb-memory-server": "^10.1.3",
     "sinon": "^19.0.2",
     "supertest": "^7.0.0"
+  },
+  "directories": {
+    "test": "tests"
   }
 }
