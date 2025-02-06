@@ -4,6 +4,8 @@
  *   schemas:
  *     Category:
  *       type: object
+ *       required:
+ *         - name
  *       properties:
  *         id:
  *          type: string

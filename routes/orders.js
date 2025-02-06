@@ -4,6 +4,13 @@
  *   schemas:
  *     Order:
  *       type: object
+ *       required:
+ *          - orderItems
+ *          - shippingAddress1
+ *          - city
+ *          - zip
+ *          - country
+ *          - phone
  *       properties:
  *         id:
  *          type: string
@@ -44,6 +51,8 @@
  *          formate: date-time
  *     OrderItem:
  *       type: object
+ *       required:
+ *         - quantity
  *       properties:
  *         id:
  *           type: string

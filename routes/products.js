@@ -4,6 +4,11 @@
  *   schemas:
  *     Product:
  *       type: object
+ *       required:
+ *         - name
+ *         - description
+ *         - category
+ *         - countInStock
  *       properties:
  *         id:
  *          type: string
